@@ -1,7 +1,18 @@
 import './index.scss'
-
 import $ from 'jquery'
 import { getQueryParams } from './getQueryParams'
+
+let myWindow
+
+function centerWindow() {
+	const width = 1920
+	const height = 1080
+	window.resizeBy(width, height)
+	const left = parseInt(screen.availWidth / 2 - width / 2)
+	const top = parseInt(screen.availHeight / 2 - height / 2)
+	const windowFeatures = `width=${width},height=${height},status,resizable,left=${left},top=${top}screenX=${left},screenY=${top}`
+	myWindow = window.open(url, 'subWind', windowFeatures)
+}
 
 class FrameView {
 	constructor($root) {

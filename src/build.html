@@ -11,12 +11,11 @@
 	<div class="container">
 		<form action="./index.html">
 			<section class="title">
-				<h2>About the frame-split</h2>
+				<h2>Framer Traits</h2>
 				<label for="title">Title</label>
-				<input type="text" id="title" name="title" value="" placeholder="'My fancy graphs', 'My teams radiator'" />
+				<input type="text" id="title" name="title" value="" placeholder="" />
 			</section>
 			<section class="layouts">
-				<h2>Pick Layout</h2>
 				<ol>
 					<li>
 						<label for="layout-2col">
@@ -41,6 +40,13 @@
 					</li>
 
 					<li>
+						<label for="layout-2col-25-75">
+							<input type="radio" id="layout-2col-25-75" name="layout" value="2col-25-75">
+							<span>2col-25-75</span>
+						</label>
+					</li>
+
+					<li>
 						<label for="layout-3row">
 							<input type="radio" id="layout-3row" name="layout" value="3row">
 							<span>3row</span>
@@ -61,7 +67,7 @@
 						</label>
 					</li>
 
-					<li>
+					<!-- <li>
 						<label for="layout-2x1">
 							<input type="radio" id="layout-2x1" name="layout" value="2x1">
 							<span>2x1</span>
@@ -94,7 +100,7 @@
 							<input type="radio" id="layout-banner-plus-3col" name="layout" value="banner-plus-3col">
 							<span>banner-plus-3col</span>
 						</label>
-					</li>
+					</li> -->
 				</ol>
 			</section>
 
@@ -125,7 +131,8 @@
 			</section>
 
 			<section class="controls">
-				<input type="submit" value="Build Layout" />
+				<input type="submit" value="Build Layout" class="b br2 ph4 pv3 input-reset ba b--light-silver bg-transparent pointer f6"
+				/>
 			</section>
 
 		</form>

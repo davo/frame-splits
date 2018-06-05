@@ -49,7 +49,7 @@ class BuildView {
 				$(item).addClass(`item item-${index + 1}`)
 			})
 			.find('input')
-			.attr('placeholder', 'URL to be displayed in this part of the layout')
+			.attr('placeholder', 'Insert valid URL')
 	}
 
 	update(params) {
