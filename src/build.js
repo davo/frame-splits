@@ -1,3 +1,4 @@
+import './index.scss'
 import $ from 'jquery'
 import { getQueryParams } from './getQueryParams'
 
