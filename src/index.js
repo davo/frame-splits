@@ -46,7 +46,7 @@ class FrameView {
 			)
 		)
 
-		const editLink = this.$root.parent().find('.build-link a')
+		const editLink = this.$root.parent().find('.build a')
 		editLink.attr('href', editLink.attr('href') + document.location.search)
 	}
 }
