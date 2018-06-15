@@ -88,6 +88,9 @@ typings/
 # next.js build output
 .next
 
+.cache/
+dist/
+
 # vuepress build output
 .vuepress/dist
 
